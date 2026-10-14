@@ -3,7 +3,7 @@ import Navbar from './components/Navbar'
 
 const App = () => {
   return (
-    <div className='bg-zinc-300 w-full h-screen'>
+    <div className='w-full h-screen bg-zinc-300'>
       <Navbar/>
     </div>
   )
