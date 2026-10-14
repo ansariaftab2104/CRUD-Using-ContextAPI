@@ -9,7 +9,7 @@ const Navbar = () => {
       <div className="logo">
         <h1 className='text-xl font-semibold'>Aftab</h1>
       </div>
-      <nav className='flex gap-5'>
+      <nav className='gap-5 hidden md:flex'>
         <a href="#">Home</a>
         <a href="#">About Us</a>
         <a href="#">Contect Us</a>
