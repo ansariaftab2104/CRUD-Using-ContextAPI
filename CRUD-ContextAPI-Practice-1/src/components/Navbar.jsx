@@ -1,6 +1,9 @@
 import React from 'react'
+import { useContext } from 'react'
+import { MyStore } from '../context/UserContext'
 
 const Navbar = () => {
+    const {setToggle, toggle} = useContext(MyStore)
   return (
     <div className='w-full bg-zinc-100 flex justify-between py-2 px-8'>
       <div className="logo">
@@ -13,8 +16,8 @@ const Navbar = () => {
         <a href="#">Our Services</a>
       </nav>
       <div className="btn">
-        <button className='bg-zinc-300 px-2 py-1 rounded cursor-pointer text-base font-semibold'>
-            Create
+        <button onClick={()=>setToggle((prev)=>!prev)} className='bg-zinc-300 px-2 py-1 rounded cursor-pointer text-base font-semibold'>
+            {toggle ? "Create" : "Close"}
         </button>
       </div>
     </div>
